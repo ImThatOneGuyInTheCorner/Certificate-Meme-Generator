@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@700&family=Diphylleia&family=Playfair+Display:ital@0;1&display=swap');
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pagewrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    width: 75vw;
+}
+
+.right {
+    width: 25vw;
+    background-color: lightgray;
+}
+
+.certificate {
+    height: 850px;
+    width: 1100px;
+    position: relative;
+    background-image: url('Tile.png');
+    background-size: 15%;
+}
+
+.content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.line {
+    height: 1px;
+    width: 20px;
+    background-color: #000;
+}
+h1 {
+    font-famil
+    font-size: 82px;
+    padding-right: 400px;
+}
+
+
+
+
+.certificate > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#topBG {
+    background-color: #886509;
+    height: 69px;
+    width: 100%;
+}
+#topVL {
+    background-color: #E3B718;
+    height: 69px;
+    width: 20px;
+    left: 94px;
+}
+#topHL {
+    background-color: #E3B718;
+    height: 20px;
+    width: 1100px;
+    top: 69px;
+}
+#topAL {
+    background-color: #E3B718;
+    clip-path: polygon(94px 0px, 197px 0px, 673px 69px, 566px 69px);
+}
+#topLightPoly {
+    background-color: #555555;
+    clip-path: polygon(197px 0px, 1100px 0px, 1100px 69px, 673px 69px);
+}
+#topDarkPoly {
+    background-color: #333333;
+    clip-path: polygon(670px 69px, 1100px 0px, 1100px 69px);
+}
+#topLBG {
+    background-color: #886509;
+    clip-path: polygon(0px 89px, 319px 89px, 0px 268px);
+}
+#topLAL {
+    background-color: #E3B718;
+    clip-path: polygon(0px 268px, 319px 89px, 360px 89px, 0px 291px);
+}
+#topLHL {
+    background-color: #E3B718;
+    height: 20px;
+    width: 198px;
+    top: 159px;
+}
+
+#tBRPoly {
+    background-color: #444444;
+    clip-path: polygon(883px 661px, 1100px 419px, 1100px 661px);
+}
+#botHL {
+    background-color: #E3B718;
+    height: 20px;
+    width: 1100px;
+    top: 641px;
+}
+#botRAL {
+    background-color: #E3B718;
+    clip-path: polygon(883px 661px, 1100px 419px, 1100px 389px, 853px 661px);
+}
+#botTHL {
+    background-color: #333333;
+    height: 50px;
+    width: 1100px;
+    top: 661px;
+}
+#botThree {
+    background-color: #E3B718;
+    height: 139px;
+    width: 1100px;
+    top: 711px;
+}
+#botRLightPoly {
+    background-color: #555555;
+    clip-path: polygon(892px 711px, 1100px 661px, 1100px 850px);
+}
+#botOne {
+    background-color: #4D2565;
+    clip-path: polygon(0px 711px, 0px 850px, 514px 850px, 708px 711px);
+}
+#botTwo {
+    background-color: #9D62B2;
+    clip-path: polygon(0px 711px, 0px 850px, 544px 850px, 738px 711px);
+}
+
+.GreyD {background-color: #333333;}
+.GreyL {background-color: #555555;}
+.gold-GoldL {background-color: #E3B718;}
+.gold-GoldD {background-color: #886509;}
+.gold-PurpL {background-color: #9D62B2;}
+.gold-PurpD {background-color: #4D2565;}
+.gold-GreyM {background-color: #444444;}
+
+.blue-Pink {background-color: #C33D5D;}
+.blue-AquaL {background-color: #43F6E1;}
+.blue-AquaD {background-color: #0DC9B3;}
+.blue-BlueL {background-color: #12CDD9;}
+.blue-BlueM {background-color: #198DCF;}
+.blue-BlueD {background-color: #10A5B9;}
+
+.green-LimeL {background-color: #DEF105;}
+.green-LimeM {background-color: #A4C716;}
+.green-LimeD {background-color: #76A119;}
+.green-GreyLL {background-color: #7F7F7F;}
+.green-WhiteL {background-color: #FCFFDB;}
+.green-WhiteD {background-color: #C8DAAB;}
+
+@media print {
+    .right {
+        display: none;
+    }
+}
