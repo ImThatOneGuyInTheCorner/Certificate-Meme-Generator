@@ -46,12 +46,98 @@ body {
     background-color: #000;
 }
 h1 {
-    font-famil
-    font-size: 82px;
-    padding-right: 400px;
+    font-family: serif;
+    font-style: italic;
+    font-size: 96px;
+    padding-bottom: 400px;
+    position: absolute;
 }
-
-
+h2 {
+    position: absolute;
+    padding-bottom: 300px;
+    padding-left: 180px;
+}
+#achievement {
+    background-color: #fff;
+    border-style: solid;
+    height: 79px;
+    width: 795px;
+    font-size: 69px;
+    font-family:serif;
+    position: absolute;
+    margin-bottom: 150px;   
+}
+#stamp {
+    position: absolute;
+    margin-right: 800px;
+    margin-top: 120px;
+    width: 160px;
+    height: 160px;
+    background-position: center;
+    background-size: contain;
+    background-image:url("STAMP.png");
+}
+#provider {
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    text-align: start;
+    font-size: 32px;
+    margin-right: 450px;
+    margin-top: 80px;
+}
+.line {
+    position: absolute;
+    width: 300px;
+    height: 2px;
+}
+#prov-line {
+    margin-right: 320px;
+    margin-top: 80px;
+}
+#date {
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    text-align: start;
+    font-size: 26px;
+    margin-right: 350px;
+    margin-top: 180px;
+}
+#date-line {
+    margin-right: 320px;
+    margin-top: 180px;
+}
+#nameTag {
+    background-color: #fff;
+    border-style: solid;
+    height: 88px;
+    width: 400px;
+    font-size: 32px;
+    font-family:serif;
+    position: absolute;
+    margin-top: 120px; 
+    margin-left: 400px;
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: serif;
+    font-style: italic;
+    border-top-width: 30px;
+}
+#name-line {
+    margin-left: 320px;
+    margin-top: 180px;
+}
+#recipient {
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 60px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+}
+#info {
+    display: none;
+}
 
 
 .certificate > div {
@@ -60,91 +146,74 @@ h1 {
     position: absolute;
 }
 #topBG {
-    background-color: #886509;
     height: 69px;
     width: 100%;
 }
 #topVL {
-    background-color: #E3B718;
     height: 69px;
     width: 20px;
     left: 94px;
 }
 #topHL {
-    background-color: #E3B718;
     height: 20px;
     width: 1100px;
     top: 69px;
 }
 #topAL {
-    background-color: #E3B718;
     clip-path: polygon(94px 0px, 197px 0px, 673px 69px, 566px 69px);
 }
 #topLightPoly {
-    background-color: #555555;
     clip-path: polygon(197px 0px, 1100px 0px, 1100px 69px, 673px 69px);
 }
 #topDarkPoly {
-    background-color: #333333;
     clip-path: polygon(670px 69px, 1100px 0px, 1100px 69px);
 }
 #topLBG {
-    background-color: #886509;
     clip-path: polygon(0px 89px, 319px 89px, 0px 268px);
 }
 #topLAL {
-    background-color: #E3B718;
     clip-path: polygon(0px 268px, 319px 89px, 360px 89px, 0px 291px);
 }
 #topLHL {
-    background-color: #E3B718;
     height: 20px;
     width: 198px;
     top: 159px;
 }
 
 #tBRPoly {
-    background-color: #444444;
     clip-path: polygon(883px 661px, 1100px 419px, 1100px 661px);
 }
 #botHL {
-    background-color: #E3B718;
     height: 20px;
     width: 1100px;
     top: 641px;
 }
 #botRAL {
-    background-color: #E3B718;
     clip-path: polygon(883px 661px, 1100px 419px, 1100px 389px, 853px 661px);
 }
 #botTHL {
-    background-color: #333333;
     height: 50px;
     width: 1100px;
     top: 661px;
 }
 #botThree {
-    background-color: #E3B718;
     height: 139px;
     width: 1100px;
     top: 711px;
 }
 #botRLightPoly {
-    background-color: #555555;
     clip-path: polygon(892px 711px, 1100px 661px, 1100px 850px);
 }
 #botOne {
-    background-color: #4D2565;
     clip-path: polygon(0px 711px, 0px 850px, 514px 850px, 708px 711px);
 }
 #botTwo {
-    background-color: #9D62B2;
     clip-path: polygon(0px 711px, 0px 850px, 544px 850px, 738px 711px);
 }
 
-.GreyD {background-color: #333333;}
-.GreyL {background-color: #555555;}
-.gold-GoldL {background-color: #E3B718;}
+.GreyD {background-color: #333333; border-color: #333333;}
+.GreyL {background-color: #555555; border-color: #555555;}
+.gold-GoldL {background-color: #E3B718; border-color: #E3B718;}
 .gold-GoldD {background-color: #886509;}
 .gold-PurpL {background-color: #9D62B2;}
 .gold-PurpD {background-color: #4D2565;}
