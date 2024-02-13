@@ -21,7 +21,7 @@ body {
     width: 25vw;
     background-color: lightgray;
 }
-p {
+p, a {
     margin-left: 20px;
 }
 .dash {
