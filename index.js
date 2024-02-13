@@ -1,5 +1,6 @@
 // Add Event listners when DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
+    changeCert('A');
 
     // check for buttons exist
     if ( document.querySelectorAll('.button') !== null) {
@@ -13,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let nameTag = document.getElementById('nameTag');
         // console.log(eventData);
         nameTag.innerText = eventData.target.value;
+    });
+    document.getElementById('prov').addEventListener('change', function (eventData) {
+        let provider = document.getElementById('provider');
+        // console.log(eventData);
+        provider.innerText = eventData.target.value;
     });
 
     document.getElementById('type').addEventListener('change', function (eventData) {
@@ -49,10 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function changeCert(value){
         let achievement = document.getElementById("achievement");
+        let nameTag = document.getElementById("nameTag");
         let topBG = document.getElementById("topBG");
         let topVL = document.getElementById("topVL");
         let topAL = document.getElementById("topAL");
-        // let topLHL = document.getElementById("toplHL");
+        let topLAL = document.getElementById("topLAL");
+        let topHL = document.getElementById("topHL");
+        let topLBG = document.getElementById("topLBG");
+        let topLHL = document.getElementById("topLHL");
         let botRAL = document.getElementById("botRAL");
         let botHL = document.getElementById("botHL");
         let botThree = document.getElementById("botThree");
@@ -64,6 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let botOne = document.getElementById("botOne");
         let botTwo = document.getElementById("botTwo");
         achievement.classList = '';
+        nameTag.classList = '';
+        topLBG.classList = '';
+        topLHL.classList = '';
+        topLAL.classList = '';
+        topHL.classList = '';
         topBG.classList = '';
         topVL.classList = '';
         topAL.classList = '';
@@ -82,10 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
         switch(value){
             case 'A':
                 achievement.classList.add('gold-GoldL');
+                nameTag.classList.add('gold-GoldL');
+                topHL.classList.add('gold-GoldL');
                 topBG.classList.add('gold-GoldD');
+                topLBG.classList.add('gold-GoldD');
                 topVL.classList.add('gold-GoldL');
                 topAL.classList.add('gold-GoldL');
-                // topLHL.classList.add('gold-GoldL');
+                topLAL.classList.add('gold-GoldL');
+                topLHL.classList.add('gold-GoldL');
                 botRAL.classList.add('gold-GoldL');
                 botHL.classList.add('gold-GoldL');
                 botThree.classList.add('gold-GoldL');
@@ -96,27 +115,48 @@ document.addEventListener("DOMContentLoaded", function () {
                 tBRPoly.classList.add('gold-GreyM');
                 botOne.classList.add('gold-PurpD');
                 botTwo.classList.add('gold-PurpL');
-                // document.getElementById("achievement").classList.add('gold-GoldL');
-                // document.getElementById("topBG").classList.add('gold-GoldD');
-                // document.getElementById("topVL").classList.add('gold-GoldL');
-                // document.getElementById("topAL").classList.add('gold-GoldL');
-                // document.getElementById("topLHL").classList.add('gold-GoldL');
-                // document.getElementById("botRAL").classList.add('gold-GoldL');
-                // document.getElementById("botHL").classList.add('gold-GoldL');
-                // document.getElementById("botThree").classList.add('gold-GoldL');
-                // document.getElementById("topLightPoly").classList.add('greyL');
-                // document.getElementById("botRLightPoly").classList.add('greyL');
-                // document.getElementById("topDarkPoly").classList.add('greyD');
-                // document.getElementById("botTHL").classList.add('greyD');
-                // document.getElementById("tBRPoly").classList.add('gold-GreyM');
-                // document.getElementById("BotOne").classList.add('gold-PurpD');
-                // document.getElementById("BotTwo").classList.add('gold-PurpL');
             break;
             case 'B':
-                alert("B");
+                achievement.classList.add('greyL');
+                nameTag.classList.add('greyL');
+                topHL.classList.add('greyL');
+                topBG.classList.add('blue-Pink');
+                topLBG.classList.add('blue-Pink');
+                topVL.classList.add('greyL');
+                topAL.classList.add('greyL');
+                topLAL.classList.add('greyL');
+                topLHL.classList.add('greyL');
+                botRAL.classList.add('greyL');
+                botHL.classList.add('greyL');
+                botThree.classList.add('blue-Pink');
+                topLightPoly.classList.add('blue-AquaL');
+                botRLightPoly.classList.add('blue-BlueL');
+                topDarkPoly.classList.add('blue-AquaD');
+                botTHL.classList.add('blue-BlueM');
+                tBRPoly.classList.add('blue-BlueD');
+                botOne.classList.add('greyD');
+                botTwo.classList.add('greyL');
             break;
             case 'C':
-                alert("C");
+                achievement.classList.add('greyL');
+                nameTag.classList.add('greyL');
+                topHL.classList.add('greyL');
+                topBG.classList.add('green-LimeM');
+                topLBG.classList.add('greyD');
+                topVL.classList.add('greyL');
+                topAL.classList.add('greyL');
+                topLAL.classList.add('greyL');
+                topLHL.classList.add('greyL');
+                botRAL.classList.add('greyL');
+                botHL.classList.add('greyL');
+                botThree.classList.add('green-GreyLL');
+                topLightPoly.classList.add('green-WhiteL');
+                botRLightPoly.classList.add('green-LimeL');
+                topDarkPoly.classList.add('green-WhiteD');
+                botTHL.classList.add('green-LimeM');
+                tBRPoly.classList.add('green-LimeD');
+                botOne.classList.add('greyD');
+                botTwo.classList.add('greyL');
             break;
         }
     }
@@ -147,5 +187,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function processForm(form){
-
+    
 }

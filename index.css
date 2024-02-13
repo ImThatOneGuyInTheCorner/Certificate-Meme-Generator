@@ -21,6 +21,12 @@ body {
     width: 25vw;
     background-color: lightgray;
 }
+p {
+    margin-left: 20px;
+}
+.dash {
+    margin-left: 10px;
+}
 
 .certificate {
     height: 850px;
@@ -81,6 +87,8 @@ h2 {
     font-family:'Courier New', Courier, monospace;
     position: absolute;
     text-align: start;
+    width: 150px;
+    text-wrap: nowrap;
     font-size: 32px;
     margin-right: 450px;
     margin-top: 80px;
@@ -211,8 +219,8 @@ h2 {
     clip-path: polygon(0px 711px, 0px 850px, 544px 850px, 738px 711px);
 }
 
-.GreyD {background-color: #333333; border-color: #333333;}
-.GreyL {background-color: #555555; border-color: #555555;}
+.greyD {background-color: #333333; border-color: #333333;}
+.greyL {background-color: #555555; border-color: #555555;}
 .gold-GoldL {background-color: #E3B718; border-color: #E3B718;}
 .gold-GoldD {background-color: #886509;}
 .gold-PurpL {background-color: #9D62B2;}
